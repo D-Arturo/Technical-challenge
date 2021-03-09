@@ -1,7 +1,7 @@
 <section>
 
     {{#each ads}}
-    
+    <fieldset>
         <p>Título: {{title}}</p>
     
     <fieldset>
@@ -9,6 +9,7 @@
         <p>{{description}}</p>
     </fieldset>
     <a href="/ads/deleteAd/{{_id}}">Delete</a>
+    </fieldset>
     {{/each}}
 
 </section>

@@ -1,6 +1,6 @@
 "use strict";
 
-const { createAd, checkContent, getAllAds } = require("./adsControllerFunctions");
+const { createAd, checkContent, getAllAds, AdDelete, erasingAds } = require("./adsControllerFunctions");
 const adsCtrl = {};
 
 const Ad = require("../models/ads");
@@ -25,5 +25,12 @@ adsCtrl.deleteAd = async (req, res) => {
   await Ad.findByIdAndDelete(req.params.id);
   res.redirect("/ads");
 };
+
+adsCtrl.eraseAds = async (req,res) => {
+    const EraseDateRef = req.body.ReferenceDate
+    const ads = await getAllAds();
+    erasingAds(ads,EraseDateRef);
+    res.redirect("/ads");
+}
 
 module.exports = adsCtrl;
