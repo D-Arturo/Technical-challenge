@@ -1,0 +1,14 @@
+<section>
+
+    {{#each ads}}
+    
+        <p>Título: {{title}}</p>
+    
+    <fieldset>
+        <legend>Descripción</legend>
+        <p>{{description}}</p>
+    </fieldset>
+    <a href="/ads/deleteAd/{{_id}}">Delete</a>
+    {{/each}}
+
+</section>

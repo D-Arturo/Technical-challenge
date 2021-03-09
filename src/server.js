@@ -1,3 +1,5 @@
+'use strict'
+
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
@@ -20,6 +22,10 @@ app.engine('.hbs', exphbs({
     handlebars: handlebars
 }));
 app.set('view engine', '.hbs');
+
+
+app.use(morgan('dev'));
+
 
 app.use(express.urlencoded({extended: false}));
 

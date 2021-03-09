@@ -1,3 +1,5 @@
+'use strict'
+
 const mongoose = require("mongoose");
 
 const ADS_APP_MONGODB_HOST = process.env.ADS_APP_MONGODB_HOST;
