@@ -28,11 +28,11 @@ app.use(morgan('dev'));
 
 
 app.use(express.urlencoded({extended: false}));
-
+app.use(express.static('public'));
+app.use(express.json());
 
 
 app.use(require('./routes/ads.routes'));
-
 
 
 app.use(express.static(path.join(__dirname, 'public')));

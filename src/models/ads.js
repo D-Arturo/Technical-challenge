@@ -13,7 +13,6 @@ const AdSchema = new Schema(
   },
   {
     timestamps: true,
-    //con esta propiedad lo que hacemos es incluir por defecto los datos de cuándo fue creado y cuándo actualizado por última vez
   }
 );
 
