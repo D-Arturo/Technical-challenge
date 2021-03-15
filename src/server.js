@@ -1,10 +1,12 @@
-'use strict'
+'use strict';
 
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const handlebars = require('handlebars');
+const session = require('express-session');
+const flash = require('connect-flash');
 
 const app = express();
 
@@ -23,8 +25,18 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-
+app.use(session({
+    secret:'secret',
+    resave: true, 
+    saveUninitialized: true
+}));
 app.use(morgan('dev'));
+app.use(flash());
+
+app.use((req, res,next) => {
+    res.locals.error_msg = req.flash('error_msg');
+    next(); 
+});
 
 
 app.use(express.urlencoded({extended: false}));
