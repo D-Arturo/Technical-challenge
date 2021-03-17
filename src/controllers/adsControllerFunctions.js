@@ -34,7 +34,7 @@ function erasingAds(ads, EraseDateRef) {
 
 async function checkNumberofAds(){
     const ads = await getAllAds();
-    if(ads.length < 3){
+    if(ads.length < 10){
         return true
     } else{
         return false

@@ -16,4 +16,10 @@ const AdSchema = new Schema(
   }
 );
 
+AdSchema.set('toJSON', {
+  transform: (document, returnedObject) => {
+    delete returnedObject.__v
+  }
+})
+
 module.exports = model('Ad', AdSchema, 'ads');
