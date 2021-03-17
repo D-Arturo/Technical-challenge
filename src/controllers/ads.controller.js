@@ -35,6 +35,7 @@ adsCtrl.createNewAd = async (req, res) => {
 };
 
 adsCtrl.renderAds = async (req, res) => {
+  res.send(await getAllAds());
   res.render("ads/all-ads", { ads: await getAllAds() });
 };
 
