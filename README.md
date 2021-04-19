@@ -20,7 +20,7 @@ that given a date removes all the ads published before this date (the day itself
 He also requested for this sprint that the catalog has a maximum of 100 ads. If someone tries to add an ad when
 maximum size has been reached, then the oldest ad that currently exists has to be removed.
 
-Sprint 3 ⚡
+Sprint 3 
 Product owner is now on fire and has a lot of ideas for our fantastic ads catalog.
 One of them is get a concrete ad from the catalog to retrieve its information.
 Other is allowing users to mark ads as favorite. Ads can be favored by multiple users and users can favorite
