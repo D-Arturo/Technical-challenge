@@ -6,7 +6,7 @@ Node Js - Express based project.
 npm i   to get all the dependencies used.
 
 Instructions:
-Sprints
+
 Sprint 1
 Our product owner is worried about how to manage all of our ads. He wants to do a lot of things but as a MVP
 it's fine if we can add, remove and list ads from our ads catalog.
