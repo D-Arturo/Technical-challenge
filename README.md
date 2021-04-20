@@ -27,5 +27,5 @@ Other is allowing users to mark ads as favorite. Ads can be favored by multiple 
 multiple ads. Users must be notified when one of their favorite ads expires or is removed from the catalog. The
 ad has to be automatically removed from their favorite ads list.
 
-
-Sprints 1 and 2 are resolved and Sprint 3 is answered by the fact that PO has no power to decide on his own how to approach to a solution.
+----
+Sprints 1 and 2 were resolved and Sprint 3 is answered by the fact that PO has no power to decide on his own how to approach to a solution.
